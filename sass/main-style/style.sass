@@ -1,0 +1,36 @@
+@import "bourbon"
+@import "../vars.sass"
+
+//Load Libs SASS
+@import "app/wp-content/themes/main-theme/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+body
+	background-color: black
+
+//ALWAYS END
+@import "../media"
