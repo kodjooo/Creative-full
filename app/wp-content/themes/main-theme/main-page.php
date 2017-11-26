@@ -3,6 +3,8 @@
 //Template Post Type: post, page, product
 get_header(); ?>
 
+<main>
+
 <!-- Our Services (start) -->
 
 <section id="sect-our-services">
@@ -70,7 +72,7 @@ get_header(); ?>
 
 <!-- Latest Projects (start) -->
 
-<section id="sect-latest-projects">
+<!-- <section id="sect-latest-projects">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container">
@@ -80,8 +82,12 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <!-- Latest Projects (finish) -->
+
+
+</main>
+
 
 <?php get_footer(); ?>

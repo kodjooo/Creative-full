@@ -2526,6 +2526,16 @@ div.service-wrapper {
 div.service-wrapper:hover div.service-value div.service-text {
   color: #e2b733; }
 
+div.heading-footer-cont {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 2.03;
+  letter-spacing: 0.8px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e2b733; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
