@@ -30,7 +30,56 @@ body textarea:required:valid
 //Custom Styles Here
 
 body
-	background-color: black
+	font-family: Tinos;
+
+.align-c
+	text-align: center;
+
+.align-r
+	text-align: right;
+
+.align-l
+	text-align: left;
+
+.h2-main
+	font-size: 48px
+	color: $gray
+
+section
+	padding: 100px 0px
+
+.m-15
+	margin: 15px
+
+.height-100
+	height: 100%
+
+.width-100
+	width: 100%
+
+// Main Page
+
+div.desc-text
+	color: $sub-gray
+	margin-top: 25px
+	margin-bottom: 50px
+
+div.service-wrapper
+	height: 350px
+	margin: 15px 0
+	background-color: $sub-gray
+	div.service-value
+		height: 100px
+		background-color: $gray
+		div.service-text
+			color: $white
+			font-size: 32px
+		
+
+div.service-wrapper:hover
+	div.service-value
+		div.service-text
+			color: $gold
 
 //ALWAYS END
 @import "../media"
