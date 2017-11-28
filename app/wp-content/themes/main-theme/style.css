@@ -2534,7 +2534,22 @@ div.heading-footer-cont {
   letter-spacing: 0.8px;
   text-align: center;
   text-transform: uppercase;
-  color: #e2b733; }
+  color: #e2b733;
+  margin-bottom: 45px; }
+  div.heading-footer-cont span.heading-footer-cont-value {
+    border-bottom: 1px solid #e2b733; }
+
+div.contact-icon i:after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  border: 1px solid #989998;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */

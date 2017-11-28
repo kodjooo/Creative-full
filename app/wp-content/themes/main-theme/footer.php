@@ -5,7 +5,22 @@
 			<div class="row">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 align-c heading-footer-cont">We Are  Ready To Work With You!</div>
+						<div class="col-12 align-c heading-footer-cont">
+							<span class="heading-footer-cont-value">We Are  Ready To Work With You!</span>
+						</div>
+						<div class="col-12 contact-icon">
+							<div class="row">
+								<div class="col-4">
+									<div class="row"><i class="fa fa-phone" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</div>
+								</div>
+								<div class="col-4">
+									<div class="row"><i class="fa fa-map-marker" aria-hidden="true"></i>Atque aut, earum consequuntur cumque!</div>
+								</div>
+								<div class="col-4">
+									<div class="row"><i class="fa fa-envelope" aria-hidden="true"></i>Libero blanditiis, quis deserunt cupiditate!</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
