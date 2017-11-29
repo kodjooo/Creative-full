@@ -73,6 +73,13 @@
 			</div>
 		</div>
 	</section>
+	<section id="sub-footer">
+		<div class="row">
+			<div class="sub-footer-wrapper-text col-12">
+				<div class="sub-footer-value-text">	&copy; Creative Tile & Stone design, Inc. <?php echo date('Y') ?> All rights reserved </div>
+			</div>
+		</div>
+	</section>
 </footer>
 <!-- Footer (finish) -->	
 

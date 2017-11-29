@@ -2657,6 +2657,17 @@ div.cont-i-wrapper {
   background-position: 97% 50%;
   outline: 1px solid #e2b733; }
 
+#sub-footer {
+  height: 40px;
+  padding: 10px 0px;
+  background-color: #161515; }
+  #sub-footer div.sub-footer-wrapper-text {
+    text-align: center; }
+    #sub-footer div.sub-footer-wrapper-text div.sub-footer-value-text {
+      font-size: 14px;
+      font-family: Nunito;
+      color: #989998; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
