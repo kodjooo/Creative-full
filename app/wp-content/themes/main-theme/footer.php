@@ -1,4 +1,14 @@
 <!-- Footer (start) -->
+
+<style>
+#sect-footer {
+	background-image: url(<?php the_field('back_footer', 'option'); ?>);
+  background-size: cover;
+  position: relative;
+  padding: 100px 0px 60px 0px;
+}
+</style>
+
 <footer>
 	<section id="sect-footer">
 		<div class="container-fluid">
@@ -6,21 +16,58 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 align-c heading-footer-cont">
-							<span class="heading-footer-cont-value">We Are  Ready To Work With You!</span>
+							<span class="heading-footer-cont-value"><?php the_field('heading_footer', 'option'); ?></span>
 						</div>
 						<div class="col-12 contact-icon">
 							<div class="row">
 								<div class="col-4">
-									<div class="row"><i class="fa fa-phone" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</div>
+									<div class="row">
+										<div class="col-4">
+											<div class="i-wrapper">
+												<i class="fa fa-phone" aria-hidden="true"></i>
+											</div>
+										</div>
+										<div class="cont-i-wrapper col-8">
+											<div class="con-i-value align-self-center">
+												<span class="con-tel"><?php the_field('tel-first_footer', 'option'); ?></span>
+												<span class="con-tel"><?php the_field('tel-second_footer', 'option'); ?></span>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="col-4">
-									<div class="row"><i class="fa fa-map-marker" aria-hidden="true"></i>Atque aut, earum consequuntur cumque!</div>
+									<div class="row">
+										<div class="col-4">
+											<div class="i-wrapper">
+												<i class="fa fa-map-marker" aria-hidden="true"></i>
+											</div>
+										</div>
+										<div class="cont-i-wrapper col-8">
+											<div class="con-i-value align-self-center"><?php the_field('location_footer', 'option'); ?></div>
+										</div>
+									</div>
 								</div>
 								<div class="col-4">
-									<div class="row"><i class="fa fa-envelope" aria-hidden="true"></i>Libero blanditiis, quis deserunt cupiditate!</div>
+									<div class="row">
+										<div class="col-4">
+											<div class="i-wrapper">
+												<i class="fa fa-envelope" aria-hidden="true"></i>
+											</div>
+										</div>
+										<div class="cont-i-wrapper col-8">
+											<div class="con-i-value align-self-center"><?php the_field('email_footer', 'option'); ?></div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						<div class="col-12">
+							
+								<?php echo do_shortcode( '[contact-form-7 id="19" title="Main contact-form"]' ); ?>
+							
+						</div>
+						
+						
 					</div>
 				</div>
 			</div>
