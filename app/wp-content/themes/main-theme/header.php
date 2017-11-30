@@ -48,6 +48,38 @@
 
 <header>
 	
+<div class="container-fluid main-header default">
+		<div class="row height-100">
+			<div class="container height-100 relative">
+				<div class="row height-100">
+					<div class="col-5 align-self-center logo-head"><?php the_custom_logo( $blog_id ); ?></div>
+					<div class="row cont-info-header align-items-center justify-content-end">
+						<div class="col-7">
+							<div class="row">
+								<div class="col-8 cont-header-value">
+									<div class="cont-text-wrapper relative">
+										<i class="fa fa-map-marker cont-header-icon" aria-hidden="true"></i> 
+										<span class="bold">Adress:</span>
+										<span class="value-text-cont">234 Roud Street, SW Florids</span>
+									</div>
+								</div>
+								<div class="col-4 cont-header-value">
+									<div class="cont-text-wrapper relative">
+										<i class="fa fa-clock-o cont-header-icon" aria-hidden="true"></i> 
+										<span class="bold">Mon-Fri:</span>
+										<span class="value-text-cont">08:00 - 16:00</span>
+									 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-7 main-menu-wrapper align-self-end">
+						<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 
 	
 </header>

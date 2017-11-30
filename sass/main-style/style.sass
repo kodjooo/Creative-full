@@ -61,6 +61,12 @@ section
 .width-100
 	width: 100%
 
+.relative
+	position: relative
+
+.bold
+	font-weight: bold
+
 // Main Page (start)
 
 // Our services (start)
@@ -94,6 +100,170 @@ div.service-wrapper:hover
 
 
 // Main Page (finish)
+
+// HEADER (start)
+
+.container-fluid.main-header.default
+	height: 150px
+	background-color: $black
+	position: absolute
+	top: 0px
+	left: 0px
+	z-index: 200
+	div.logo-head
+		z-index: 100
+		a.custom-logo-link img.custom-logo
+			width: 360px !important
+			height: 120px !important
+			z-index: 100
+	div.cont-info-header
+		color: $white
+		height: 100px
+		width: 100%
+		position: absolute
+		top: 0px
+		right: 0px
+		div.cont-header-value
+			font-family: Saira
+			font-size: 14px
+			color: #bbbbbb
+			text-align: right
+			div.cont-text-wrapper
+				display: inline-block
+				i.cont-header-icon
+					font-size: 25px
+					color: #9b9b9b
+					margin-right: 5px
+					position: absolute
+					left: -30px
+					top: -2px
+	div.main-menu-wrapper
+		div.menu-osn-menu-container
+		width: 100%
+		ul
+			padding-left: 0px
+			margin-bottom: 0px
+			width: 100%
+			display: flex
+			flex-direction: row
+			justify-content: end
+		li
+			display: inline-flex
+			list-style: none
+			text-transform: uppercase
+			border-right: 1px solid $black
+			background-color: $gray-border
+			display: block
+			@include transition(0.3s)
+			a
+				color: $black
+				display: block
+				padding: 14px 15px
+				text-decoration: none
+				font-family: Saira
+				font-size: 14px
+				font-weight: 600
+		li:first-child
+			a
+				padding-left: 70px	
+			a:before
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0px;
+				height: auto;
+				width: 7%;
+				right: 91%;
+				border-top: 50px solid $black; 
+				border-right: 44px solid transparent;	
+		li:last-child
+			border: none
+			a
+				padding-right: 600px
+		li:hover
+			background-color: darken($gray-border, 5%)
+
+.container-fluid.main-header.fixed
+	height: 50px
+	background-color: $black
+	position: fixed
+	top: 0px
+	left: 0px
+	z-index: 200
+	div.logo-head
+		z-index: 100
+		a.custom-logo-link img.custom-logo.mini
+			width: 135px !important
+			height: 45px !important
+			z-index: 100
+	div.cont-info-header
+		color: $white
+		height: 100px
+		width: 100%
+		position: absolute
+		top: 0px
+		right: 0px
+		div.cont-header-value
+			font-family: Saira
+			font-size: 14px
+			color: #bbbbbb
+			text-align: right
+			div.cont-text-wrapper
+				display: inline-block
+				i.cont-header-icon
+					font-size: 25px
+					color: #9b9b9b
+					margin-right: 5px
+					position: absolute
+					left: -30px
+					top: -2px
+	div.main-menu-wrapper
+		div.menu-osn-menu-container
+		width: 100%
+		ul
+			padding-left: 0px
+			margin-bottom: 0px
+			width: 100%
+			display: flex
+			flex-direction: row
+			justify-content: end
+		li
+			display: inline-flex
+			list-style: none
+			text-transform: uppercase
+			border-right: 1px solid $black
+			background-color: $gray-border
+			display: block
+			@include transition(0.3s)
+			a
+				color: $black
+				display: block
+				padding: 14px 15px
+				text-decoration: none
+				font-family: Saira
+				font-size: 14px
+				font-weight: 600
+		li:first-child
+			a
+				padding-left: 70px	
+			a:before
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0px;
+				height: auto;
+				width: 7%;
+				right: 91%;
+				border-top: 50px solid $black; 
+				border-right: 44px solid transparent;	
+		li:last-child
+			border: none
+			a
+				padding-right: 600px
+		li:hover
+			background-color: darken($gray-border, 5%)
+
+// HEADER (finish)
 
 
 // FOOTER (start)

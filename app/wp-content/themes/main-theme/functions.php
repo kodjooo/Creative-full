@@ -2,6 +2,15 @@
 
 add_image_size( 'calc-thumb', 100, 100, true ); // Кадрирование изображения
 
+add_theme_support( 'custom-logo' );
+
+register_nav_menus( array( 
+
+ 'main-menu' => __( 'Основное меню' ),
+
+
+ ) );
+
 //Options page
 
 if( function_exists('acf_add_options_page') ) {
