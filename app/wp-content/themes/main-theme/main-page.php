@@ -5,6 +5,53 @@ get_header(); ?>
 
 <main>
 
+<style>
+	#sect-top div.image-in-sect-top{
+		background: url(<?php the_field('main_top_image'); ?>);
+		background-size: cover;
+		background-position: center;
+	}
+</style>
+
+<!-- Top Section (start) -->
+
+<section id="sect-top">
+	<div class="container-fluid image-in-sect-top">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-in-top-wrapper">
+						<span class="text-in-top-1"><?php the_field('text_in_top_1'); ?></span>
+						<span class="text-in-top-2"><?php the_field('text_in_top_2'); ?></span>
+						<span class="text-in-top-3"><?php the_field('text_in_top_3'); ?></span>
+						<a href="#">
+							<span class="text-in-top-button"><?php the_field('text_in_top_button'); ?></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid projects-in-sect-top">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="row">
+							<div class="offer-wrapper">
+								<div class="offer-value"></div>
+								<a href="#"><div class="offer-button"></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Top Section (finish) -->
+
 <!-- Our Services (start) -->
 
 <section id="sect-our-services">
