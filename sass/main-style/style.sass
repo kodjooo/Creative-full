@@ -116,6 +116,10 @@ div.service-wrapper:hover
 			width: 360px !important
 			height: 120px !important
 			z-index: 100
+			@include transition(0.5s)
+		a.custom-logo-link img.custom-logo-mini
+			display: none
+			@include transition(0.5s)
 	div.cont-info-header
 		color: $white
 		height: 100px
@@ -192,10 +196,15 @@ div.service-wrapper:hover
 	z-index: 200
 	div.logo-head
 		z-index: 100
-		a.custom-logo-link img.custom-logo.mini
-			width: 135px !important
-			height: 45px !important
+		a.custom-logo-link img.custom-logo-mini
+			width: 400px !important
+			height: 40px !important
+			margin-left: 15px
 			z-index: 100
+			@include transition(0.5s)
+		a.custom-logo-link img.custom-logo
+			display: none
+			@include transition(0.5s)
 	div.cont-info-header
 		color: $white
 		height: 100px

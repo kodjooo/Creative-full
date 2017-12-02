@@ -52,7 +52,12 @@
 		<div class="row height-100">
 			<div class="container height-100 relative">
 				<div class="row height-100">
-					<div class="col-5 align-self-center logo-head"><?php the_custom_logo( $blog_id ); ?></div>
+					<div class="col-5 align-self-center logo-head">
+						<a href="" class="custom-logo-link">
+							<img src="<?php the_field('main-logo-header', 'option'); ?>" class="custom-logo" alt="">
+							<img src="<?php the_field('sub-main-logo-header', 'option'); ?>" class="custom-logo-mini" alt="">
+						</a>
+					</div>
 					<div class="row cont-info-header align-items-center justify-content-end">
 						<div class="col-7">
 							<div class="row">
