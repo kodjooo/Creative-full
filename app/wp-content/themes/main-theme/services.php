@@ -1,5 +1,5 @@
 <?php 
-// Template Name: Partners
+// Template Name: Servises
 //Template Post Type: post, page, product
 get_header(); ?>
 
@@ -21,6 +21,8 @@ get_header(); ?>
 		width: 100%;
 		height: 100%;
 	}
+
+
 
 </style>
 
@@ -56,53 +58,58 @@ get_header(); ?>
 
 <!-- Our Services (start) -->
 
-<section id="sect-page-partners">
+<section id="sect-page-servises">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<div class="row">
-							<div class="col-3">
-								<div class="row">
-									<div class="sidebar-wrapper"><?php get_sidebar(); ?></div>
-								</div>
-							</div>
-							<div class="col-9">
+							<div class="col-12 m-b-30">
 								<div class="row">
 									<h1 class="heading-page"><?php the_field('heading_for_the_page'); ?></h1>
+								</div>
+							</div>		
+							<div class="col-12 m-b-60">
+								<div class="row">
 									<div class="text-page"><?php the_field('description_of_the_page'); ?></div>
 								</div>
-							</div>
+							</div>	
 						</div>
-					</div>
-					<div class="col-12 partners-repeater">
-						<div class="row">
-							<?php 
-							$partners_repeater = get_field('partners_repeater');
-              if($partners_repeater) { 
-              foreach($partners_repeater as $partner_repeater) { 
-              $name = $partner_repeater['name'];
-              $image = $partner_repeater['image'];
-              $description = $partner_repeater['description'];
-              ?>
-							<div class="col-6 partner-wrapper">
-								<div class="row m-0">
-									<div class="col-5">
-										<div class="row">
-											<img src="<?php echo $image; ?>" alt="">
+						<div class="col-12">
+							<div class="row">
+								<?php 
+								$id_this_page = get_the_ID();
+								$children_this_page = get_pages( array( 'parent' => $id_this_page, 'hierarchical' => 1, 'sort_column' => 'post_title' ) );
+								if ($children_this_page) {
+								$number = 1;
+                foreach( $children_this_page as $child_this_page ){ 
+								if ( $child_this_page->post_title ) { 
+								$url_thumb = get_the_post_thumbnail_url( $child_this_page->ID, "full" );
+								?>
+								<style>
+									div.service-wrapper-<?php echo $number; ?>{
+										background: url(<?php echo $url_thumb; ?>);
+										background-size: cover;
+										background-position: center;
+									}
+								</style>
+								<div class="col-6">
+									<a href="<?php echo $child_this_page->ID ?>">
+										<div class="col-12 service-wrapper service-wrapper-<?php echo $number; ?>">
+											<div class="row height-100">
+												<div class="col-12 service-value align-self-center">
+													<div class="row height-100">
+														<div class="col-12 align-self-center align-c service-text"><?php echo $child_this_page->post_title ?></div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="col-7">
-										<div class="row">
-											<div class="name-partner"><?php echo $name; ?></div>
-											<div class="desc-partner"><?php echo $description; ?></div>
-										</div>
-									</div>
+									</a>
 								</div>
-								
+
+								<?php } $number++; } } ?>
 							</div>
-							<?php } } ?>
 						</div>
 					</div>
 				</div>

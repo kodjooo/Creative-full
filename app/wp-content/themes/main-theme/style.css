@@ -2501,6 +2501,9 @@ section {
 .m-15 {
   margin: 15px; }
 
+.m-0 {
+  margin: 0px; }
+
 .height-100 {
   height: 100%; }
 
@@ -2524,7 +2527,7 @@ div.service-wrapper {
   background-color: #555150; }
   div.service-wrapper div.service-value {
     height: 100px;
-    background-color: #111111; }
+    background-color: rgba(0, 0, 0, 0.5); }
     div.service-wrapper div.service-value div.service-text {
       color: #ffffff;
       font-size: 32px; }
@@ -3030,6 +3033,109 @@ div.cont-i-wrapper {
   background-color: #555150;
   padding-top: 230px;
   padding-bottom: 85px; }
+  #sect-top-mini a {
+    text-decoration: none; }
+  #sect-top-mini div.category-heading {
+    font-family: Montserrat;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #ffffff; }
+  #sect-top-mini span.text-in-top-button {
+    font-family: Montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative; }
+  #sect-top-mini span.text-in-top-button:before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #e2b733;
+    position: absolute;
+    bottom: -6px;
+    left: 0px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  #sect-top-mini span.text-in-top-button:hover:before {
+    width: 40px; }
+
+div.sidebar-wrapper li {
+  list-style-type: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  div.sidebar-wrapper li a {
+    text-decoration: none;
+    color: #111111;
+    display: block;
+    padding: 9px 18px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+div.sidebar-wrapper li:hover {
+  background-color: #111111; }
+  div.sidebar-wrapper li:hover a {
+    text-decoration: none;
+    color: #e2b733; }
+
+#sect-page-partners h1.heading-page {
+  font-size: 48px;
+  text-align: left;
+  color: #111111;
+  margin-bottom: 30px; }
+
+#sect-page-partners div.text-page {
+  width: 775px;
+  color: #555150;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: justify;
+  font-family: Nunito; }
+
+#sect-page-partners div.partners-repeater div.partner-wrapper {
+  margin: 15px 0px; }
+  #sect-page-partners div.partners-repeater div.partner-wrapper img {
+    width: 200px;
+    height: 100%;
+    margin-top: 10px; }
+  #sect-page-partners div.partners-repeater div.partner-wrapper div.name-partner {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 10px; }
+  #sect-page-partners div.partners-repeater div.partner-wrapper div.desc-partner {
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: justify;
+    color: #555150; }
+
+#sect-page-servises h1.heading-page {
+  font-size: 48px;
+  text-align: center;
+  color: #111111;
+  margin: 0 auto; }
+
+#sect-page-servises .m-b-30 {
+  margin-bottom: 30px; }
+
+#sect-page-servises div.text-page {
+  width: 830px;
+  color: #555150;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  font-family: Nunito;
+  margin: 0 auto; }
+
+#sect-page-servises .m-b-60 {
+  margin-bottom: 60px; }
+
+#sect-page-servises a {
+  text-decoration: none; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */

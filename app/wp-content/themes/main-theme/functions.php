@@ -6,10 +6,13 @@ add_theme_support( 'custom-logo' );
 
 register_nav_menus( array( 
 
- 'main-menu' => __( 'Основное меню' ),
+ 'main-menu' => __( 'Main menu' ),
 
+ 'sidebar-menu' => __( 'Sidebar menu' ),
 
  ) );
+
+add_theme_support( 'post-thumbnails' );
 
 //Options page
 
