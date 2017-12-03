@@ -1,5 +1,5 @@
 <?php 
-// Template Name: Главная
+// Template Name: Main page
 //Template Post Type: post, page, product
 get_header(); ?>
 

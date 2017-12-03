@@ -3026,6 +3026,11 @@ div.cont-i-wrapper {
   #sect-latest-projects div.h2-main {
     color: #ffffff; }
 
+#sect-top-mini {
+  background-color: #555150;
+  padding-top: 230px;
+  padding-bottom: 85px; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
