@@ -38,9 +38,29 @@ get_header(); ?>
 				<div class="row">
 					<div class="col-12">
 						<div class="row">
+							<div class="completed-project-wrapper col-8">
+								<div class="row">
+									<div class="completed-project-img-wrapper col-6">
+										<div class="completed-project-img-sub-wrapper">
+										<img src="<?php the_field('image_for_completed_project'); ?>" alt="">
+										<span class="completed-count"><?php the_field('how_much_complete_project'); ?></span>
+										</div>
+									</div>
+									<div class="completed-project-text-wrapper col-6">
+										<span class="completed-project-heading">Completed <span class="bold">Projects</span></span>
+										<span class="completed-project-value"><?php the_field('description_completed_projects'); ?></span>
+									</div>
+								</div>
+							</div>
 							<div class="offer-wrapper">
-								<div class="offer-value"></div>
-								<a href="#"><div class="offer-button"></div></a>
+								<div class="offer-value">
+									<span><?php the_field('text_description_for_button_in_top_section'); ?></span>
+								</div>
+								<a href="#">
+									<div class="offer-button">
+										<span><?php the_field('text_for_button_in_top_section'); ?></span>	
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -119,7 +139,7 @@ get_header(); ?>
 
 <!-- Latest Projects (start) -->
 
-<!-- <section id="sect-latest-projects">
+<section id="sect-latest-projects">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container">
@@ -129,9 +149,25 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-</section> -->
+</section>
 
 <!-- Latest Projects (finish) -->
+
+<!-- Our Partners (start) -->
+
+<section id="sect-partners">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 align-c h2-main">Our Partners</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Our Partners (finish) -->
 
 
 </main>

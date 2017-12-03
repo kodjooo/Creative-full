@@ -2941,6 +2941,35 @@ div.cont-i-wrapper {
     background-color: #111111;
     height: 150px;
     position: relative; }
+    #sect-top div.projects-in-sect-top div.completed-project-wrapper div.completed-project-img-wrapper {
+      text-align: right; }
+      #sect-top div.projects-in-sect-top div.completed-project-wrapper div.completed-project-img-wrapper div.completed-project-img-sub-wrapper {
+        position: relative; }
+        #sect-top div.projects-in-sect-top div.completed-project-wrapper div.completed-project-img-wrapper div.completed-project-img-sub-wrapper img {
+          max-height: 140px; }
+        #sect-top div.projects-in-sect-top div.completed-project-wrapper div.completed-project-img-wrapper div.completed-project-img-sub-wrapper span.completed-count {
+          position: absolute;
+          top: 43px;
+          right: 2px;
+          font-family: Montserrat;
+          font-size: 36px;
+          color: #ffffff; }
+    #sect-top div.projects-in-sect-top div.completed-project-wrapper div.completed-project-text-wrapper {
+      margin-top: 30px; }
+      #sect-top div.projects-in-sect-top div.completed-project-wrapper div.completed-project-text-wrapper span.completed-project-heading {
+        width: 250px;
+        font-family: Nunito;
+        font-size: 26px;
+        color: #ffffff;
+        display: block;
+        margin: 0 auto; }
+      #sect-top div.projects-in-sect-top div.completed-project-wrapper div.completed-project-text-wrapper span.completed-project-value {
+        display: block;
+        width: 250px;
+        font-size: 14px;
+        font-style: italic;
+        color: #ffffff;
+        margin: 0 auto; }
     #sect-top div.projects-in-sect-top div.offer-wrapper {
       position: absolute;
       top: -105px;
@@ -2949,12 +2978,34 @@ div.cont-i-wrapper {
         width: 280px;
         height: 105px;
         background-color: rgba(0, 0, 0, 0.5); }
+        #sect-top div.projects-in-sect-top div.offer-wrapper div.offer-value span {
+          width: 203px;
+          height: 75px;
+          display: block;
+          font-family: Nunito;
+          font-size: 18px;
+          text-align: center;
+          color: #ffffff;
+          padding-top: 12px;
+          margin: 0 auto; }
       #sect-top div.projects-in-sect-top div.offer-wrapper div.offer-button {
         position: relative;
         width: 280px;
         border-width: 35px 0px 0;
         border-style: solid;
         border-color: #e2b733 transparent; }
+        #sect-top div.projects-in-sect-top div.offer-wrapper div.offer-button span {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 500;
+          color: #212121;
+          position: absolute;
+          top: -17px;
+          left: 50%;
+          width: 140px;
+          margin-left: -70px;
+          font-family: Nunito; }
       #sect-top div.projects-in-sect-top div.offer-wrapper div.offer-button:before {
         content: "";
         position: absolute;
@@ -2965,6 +3016,15 @@ div.cont-i-wrapper {
         border-width: 30px 140px 0px;
         border-style: solid;
         border-color: #e2b733 transparent transparent; }
+      #sect-top div.projects-in-sect-top div.offer-wrapper div.offer-button:hover {
+        border-color: #d3a71e transparent; }
+      #sect-top div.projects-in-sect-top div.offer-wrapper div.offer-button:hover:before {
+        border-color: #d3a71e transparent transparent; }
+
+#sect-latest-projects {
+  background-color: #111111; }
+  #sect-latest-projects div.h2-main {
+    color: #ffffff; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */

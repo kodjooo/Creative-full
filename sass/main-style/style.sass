@@ -478,6 +478,36 @@ div.cont-i-wrapper
 		background-color: $gray
 		height: 150px
 		position: relative
+		div.completed-project-wrapper
+			div.completed-project-img-wrapper
+				text-align: right
+				div.completed-project-img-sub-wrapper
+					position: relative
+					img
+						max-height: 140px
+					span.completed-count
+						position: absolute
+						top: 43px
+						right: 2px
+						font-family: Montserrat
+						font-size: 36px
+						color: $white
+			div.completed-project-text-wrapper
+				margin-top: 30px
+				span.completed-project-heading
+					width: 250px
+					font-family: Nunito
+					font-size: 26px
+					color: #ffffff
+					display: block
+					margin: 0 auto
+				span.completed-project-value
+					display: block
+					width: 250px
+					font-size: 14px
+					font-style: italic
+					color: #ffffff
+					margin: 0 auto
 		div.offer-wrapper
 			position: absolute
 			top: -105px
@@ -486,12 +516,34 @@ div.cont-i-wrapper
 				width: 280px
 				height: 105px
 				background-color: rgba(0, 0, 0, 0.5)
+				span
+					width: 203px
+					height: 75px
+					display: block
+					font-family: Nunito
+					font-size: 18px
+					text-align: center
+					color: #ffffff
+					padding-top: 12px
+					margin: 0 auto
 			div.offer-button
 				position: relative
 				width: 280px
 				border-width: 35px 0px 0
 				border-style: solid
 				border-color: $gold transparent
+				span
+					text-decoration: none
+					text-transform: uppercase
+					font-size: 14px
+					font-weight: 500
+					color: #212121
+					position: absolute
+					top: -17px
+					left: 50%
+					width: 140px
+					margin-left: -70px
+					font-family: Nunito
 			div.offer-button:before
 				content: ""
 				position: absolute
@@ -502,12 +554,22 @@ div.cont-i-wrapper
 				border-width: 30px 140px 0px
 				border-style: solid
 				border-color: $gold transparent transparent
-
-
-
-
-
+			div.offer-button:hover
+				border-color: darken($gold, 7%) transparent
+			div.offer-button:hover:before
+				border-color: darken($gold, 7%) transparent transparent
+				
 // Top Section (finish)
+
+// Latest Projects (start)
+
+#sect-latest-projects
+	background-color: $gray
+	div.h2-main
+		color: $white
+
+
+// Latest Projects (finish)
 
 //ALWAYS END
 @import "../media"
