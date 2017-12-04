@@ -80,7 +80,7 @@ get_header(); ?>
 							<div class="row">
 								<?php 
 								$id_this_page = get_the_ID();
-								$children_this_page = get_pages( array( 'parent' => $id_this_page, 'hierarchical' => 1, 'sort_column' => 'post_title' ) );
+								$children_this_page = get_pages( array( 'parent' => $id_this_page, 'hierarchical' => 1, 'sort_column' => 'post_date' ) );
 								if ($children_this_page) {
 								$number = 1;
                 foreach( $children_this_page as $child_this_page ){ 

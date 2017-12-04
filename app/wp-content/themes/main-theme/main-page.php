@@ -74,58 +74,66 @@ get_header(); ?>
 
 <!-- Our Services (start) -->
 
-<section id="sect-our-services">
+<?php 
+
+$id_this_page_servises = get_field('link_to_the_page_our_services'); 
+
+$post = $id_this_page_servises;
+setup_postdata( $post );
+
+
+?>
+
+<section id="sect-page-servises">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 align-c h2-main">Our Services</div>
-					<div class="col-12 desc-text align-c">Our company is based on a family tradition of superior floor covering and ceramic tile installation services. My family began a store much like today’s decorator stores back in the early 60’s.   </div>
 					<div class="col-12">
 						<div class="row">
-							<div class="col-6">
-								<div class="col-12 service-wrapper">
-									<div class="row height-100">
-										<div class="col-12 service-value align-self-center">
+							<div class="col-12 m-b-30">
+								<div class="row">
+									<h1 class="heading-page"><?php the_field('heading_for_the_page'); ?></h1>
+								</div>
+							</div>		
+							<div class="col-12 m-b-60">
+								<div class="row">
+									<div class="text-page"><?php the_field('description_of_the_page'); ?></div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-12">
+							<div class="row">
+								<?php 
+								$children_this_page = get_pages( array( 'parent' => $id_this_page_servises, 'hierarchical' => 1, 'sort_column' => 'post_date' ) );
+								if ($children_this_page) {
+								$number = 1;
+                foreach( $children_this_page as $child_this_page ){ 
+								if ( $child_this_page->post_title ) { 
+								$url_thumb = get_the_post_thumbnail_url( $child_this_page->ID, "full" );
+								?>
+								<style>
+									div.service-wrapper-<?php echo $number; ?>{
+										background: url(<?php echo $url_thumb; ?>);
+										background-size: cover;
+										background-position: center;
+									}
+								</style>
+								<div class="col-6">
+									<a href="<?php echo $child_this_page->ID ?>">
+										<div class="col-12 service-wrapper service-wrapper-<?php echo $number; ?>">
 											<div class="row height-100">
-												<div class="col-12 align-self-center align-c service-text">Lorem ipsum dolor sit amet.</div>
+												<div class="col-12 service-value align-self-center">
+													<div class="row height-100">
+														<div class="col-12 align-self-center align-c service-text"><?php echo $child_this_page->post_title ?></div>
+													</div>
+												</div>
 											</div>
 										</div>
-									</div>
+									</a>
 								</div>
-							</div>
-							<div class="col-6">
-								<div class="col-12 service-wrapper">
-									<div class="row height-100">
-										<div class="col-12 service-value align-self-center">
-											<div class="row height-100">
-												<div class="col-12 align-self-center align-c service-text">Lorem ipsum dolor sit amet.</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="col-12 service-wrapper">
-									<div class="row height-100">
-										<div class="col-12 service-value align-self-center">
-											<div class="row height-100">
-												<div class="col-12 align-self-center align-c service-text">Lorem ipsum dolor sit amet.</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="col-12 service-wrapper">
-									<div class="row height-100">
-										<div class="col-12 service-value align-self-center">
-											<div class="row height-100">
-												<div class="col-12 align-self-center align-c service-text">Lorem ipsum dolor sit amet.</div>
-											</div>
-										</div>
-									</div>
-								</div>
+
+								<?php } $number++; } } ?>
 							</div>
 						</div>
 					</div>
@@ -134,6 +142,8 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
+
+<?php wp_reset_postdata(); ?>
 
 <!-- Our Services (finish) -->
 
@@ -155,17 +165,55 @@ get_header(); ?>
 
 <!-- Our Partners (start) -->
 
+<?php 
+
+$id_this_page_partners = get_field('link_to_the_page_our_partners'); 
+
+$post = $id_this_page_partners;
+setup_postdata( $post );
+$desc = get_field('description_of_the_page');
+$mini_desc = mb_strimwidth($desc, 0, 200, " ...");
+
+?>
+
 <section id="sect-partners">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 align-c h2-main">Our Partners</div>
+					<div class="col-12">
+						<div class="row">
+							<div class="col-4 pad-l-30">
+								<div class="row">
+									<h1 class="heading-page"><?php the_field('heading_for_the_page'); ?></h1>
+									<div class="text-page"><?php echo $mini_desc; ?></div>
+								</div>
+							</div>
+							<div class="col-8 pad-l-50">
+								<div class="row">
+									<?php 
+									$partners_repeater = get_field('partners_repeater');
+		              if($partners_repeater) { 
+		              foreach($partners_repeater as $partner_repeater) { 
+		              $image = $partner_repeater['image'];
+		              ?>
+		              <div class="col-6 mar-15 img-wrapper">
+		              	<div class="row justify-content-center">
+		              		<img src="<?php echo $image; ?>" alt="">
+		              	</div>
+		              </div>
+									<?php } } ?>
+								</div>
+							</div>
+						</div>
+					</div>		
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<?php wp_reset_postdata(); ?>
 
 <!-- Our Partners (finish) -->
 

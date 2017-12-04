@@ -3113,6 +3113,36 @@ div.sidebar-wrapper li:hover {
     text-align: justify;
     color: #555150; }
 
+#sect-partners h1.heading-page {
+  font-size: 48px;
+  text-align: left;
+  color: #111111;
+  margin-bottom: 20px; }
+
+#sect-partners div.text-page {
+  width: 775px;
+  color: #555150;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: left;
+  font-family: Nunito; }
+
+#sect-partners .pad-l-30 {
+  padding-left: 30px; }
+
+#sect-partners .mar-15 {
+  margin-bottom: 20px; }
+
+#sect-partners .pad-l-50 {
+  padding-left: 50px; }
+
+#sect-partners img {
+  width: 250px;
+  height: 100%;
+  margin-top: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
 #sect-page-servises h1.heading-page {
   font-size: 48px;
   text-align: center;
@@ -3132,7 +3162,7 @@ div.sidebar-wrapper li:hover {
   margin: 0 auto; }
 
 #sect-page-servises .m-b-60 {
-  margin-bottom: 60px; }
+  margin-bottom: 40px; }
 
 #sect-page-servises a {
   text-decoration: none; }
