@@ -1,0 +1,79 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 04.12.2017 20:06
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.30
+WORDPRESS:	4.9
+PHP INFO:	5.3.29 | SAPI: apache2handler
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (1536M default) 
+MEMORY STACK: 45MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:13 | filtered:0 | create:13 
+FILTERED: [] 
+SQL CREATED: 20171204_creative_8835051b2ddce7608082171204195733_database.sql 
+SQL FILE SIZE: 192.59KB (197214) 
+SQL FILE TIME: 2017-12-04 20:06:31 
+SQL RUNTIME: 0.62 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  W:/domains/cr.loc/app 
+ARCHIVE FILE: 20171204_creative_8835051b2ddce7608082171204195733_archive.zip 
+FILTERS: *ON* 
+DIRS:
+	not set 
+FILES:
+	W:/domains/cr.loc/app/wp-content/themes/main-theme/Òàñêè.todo 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	45.63MB 
+STATS:	Dirs 262 | Files 2,225 
+SQL ADDED: 20171204_creative_8835051b2ddce7608082171204195733_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2487
+    [filename] => W:\domains\cr.loc\app\wp-snapshots\tmp\20171204_creative_8835051b2ddce7608082171204195733_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 18.48MB 
+ARCHIVE RUNTIME: 18.87 sec. 
+MEMORY STACK: 45.75MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [W:/domains/cr.loc/app/wp-snapshots/tmp/20171204_creative_8835051b2ddce7608082171204195733_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 192.59KB 
+Installer File: 443.28KB 
+Archive File: 18.48MB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 20.15 sec.
+PEAK PHP MEMORY USED: 48.25MB
+DONE PROCESSING => 20171204_creative 04.12.2017 20:06
+ 
