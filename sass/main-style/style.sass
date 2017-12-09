@@ -730,6 +730,143 @@ div.sidebar-wrapper
 
 // PAGE SERVISES (finish)
 
+// PAGE ABOUT US (start)
+
+#sect-page-about-us
+	h1.heading-page
+		font-size: 48px
+		text-align: left
+		color: $gray
+		margin-bottom: 30px
+	div.text-page
+		width: 775px
+		color: $sub-gray
+		font-size: 16px
+		line-height: 1.63
+		text-align: justify
+		font-family: Nunito
+	div.h3
+		text-transform: uppercase
+		font-size: 24px
+		color: $gray
+	div.h3.margins
+		margin: 70px 0 35px 0
+	div.miss-wrapper
+		@include transition(0.3s)
+		div.img-mission-wrapper
+			img
+				width: 300px
+				height: 145px
+		div.head-mission
+			@include transition(0.3s)
+			font-family: Nunito
+			font-size: 28px
+			color: $gray
+			margin: 14px 0 7px 0
+		div.desc-mission
+			font-family: Nunito
+			font-size: 16px
+			line-height: 1.63
+			text-align: center
+			color: $sub-gray
+			margin-bottom: 10px
+			@include transition(0.3s)
+			div
+				display: block
+				width: 300px
+				margin: 0 auto
+		div.mission-list-wrapper
+			ul.mission-list
+				padding-left: 0px
+				list-style-type: none
+				font-size: 16px
+				font-family: Nunito
+				color: $sub-gray
+				@include transition(0.3s)
+				i
+					color: $gold
+					margin-right: 12px
+	div.miss-wrapper:hover
+		background-color: $gray
+		div.head-mission
+			color: $white
+		div.desc-mission
+			color: $white
+		div.mission-list-wrapper
+			ul.mission-list
+				color: $white
+	div.heading-margin
+		margin-top: 70px
+		margin-bottom: 30px
+	div.accordion
+		width: 100%
+	div.card
+		border: none
+		background-color: $white
+		div.card-header
+			color: $gold
+			font-size: 26px
+			font-family: Nunito
+			border: none
+			background-color: $white
+			cursor: pointer
+			a.card-title
+				div.i-cart-wrapper
+					position: relative
+					width: 36px
+					border-width: 30px 0px 0
+					border-style: solid
+					border-color: $gold transparent
+					float: left
+					margin-right: 30px
+
+				div.i-cart-wrapper:before
+					content: ""
+					position: absolute
+					height: 0
+					width: 0px
+					top: 0px
+					left: 0px
+					border-width: 10px 18px 0px
+					border-style: solid
+					border-color: $gold transparent transparent
+				i
+					color: $white
+					font-size: 12px
+					position: absolute
+					top: -17px
+					left: 13px
+					transform: rotate(90deg);
+
+		div.card-header.collapsed
+			color: $gray
+			background-color: $white
+			a.card-title
+				div.i-cart-wrapper
+					border-color: transparent transparent
+
+				div.i-cart-wrapper:before
+					content: ""
+					border-color: transparent transparent transparent
+				i
+					color: $gray
+					transform: rotate(0deg);
+		div.card-block
+			font-size: 16px
+			line-height: 1.31
+			text-align: justify
+			color: $sub-gray
+			font-family: Nunito
+			width: 525px;
+			padding-left: 89px;
+
+
+
+
+
+
+// PAGE ABOUT US (finish)
+
 // OTHER PAGES (finish)
 
 

@@ -3167,6 +3167,141 @@ div.sidebar-wrapper li:hover {
 #sect-page-servises a {
   text-decoration: none; }
 
+#sect-page-about-us h1.heading-page {
+  font-size: 48px;
+  text-align: left;
+  color: #111111;
+  margin-bottom: 30px; }
+
+#sect-page-about-us div.text-page {
+  width: 775px;
+  color: #555150;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: justify;
+  font-family: Nunito; }
+
+#sect-page-about-us div.h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #111111; }
+
+#sect-page-about-us div.h3.margins {
+  margin: 70px 0 35px 0; }
+
+#sect-page-about-us div.miss-wrapper {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  #sect-page-about-us div.miss-wrapper div.img-mission-wrapper img {
+    width: 300px;
+    height: 145px; }
+  #sect-page-about-us div.miss-wrapper div.head-mission {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: Nunito;
+    font-size: 28px;
+    color: #111111;
+    margin: 14px 0 7px 0; }
+  #sect-page-about-us div.miss-wrapper div.desc-mission {
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: #555150;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    #sect-page-about-us div.miss-wrapper div.desc-mission div {
+      display: block;
+      width: 300px;
+      margin: 0 auto; }
+  #sect-page-about-us div.miss-wrapper div.mission-list-wrapper ul.mission-list {
+    padding-left: 0px;
+    list-style-type: none;
+    font-size: 16px;
+    font-family: Nunito;
+    color: #555150;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    #sect-page-about-us div.miss-wrapper div.mission-list-wrapper ul.mission-list i {
+      color: #e2b733;
+      margin-right: 12px; }
+
+#sect-page-about-us div.miss-wrapper:hover {
+  background-color: #111111; }
+  #sect-page-about-us div.miss-wrapper:hover div.head-mission {
+    color: #ffffff; }
+  #sect-page-about-us div.miss-wrapper:hover div.desc-mission {
+    color: #ffffff; }
+  #sect-page-about-us div.miss-wrapper:hover div.mission-list-wrapper ul.mission-list {
+    color: #ffffff; }
+
+#sect-page-about-us div.heading-margin {
+  margin-top: 70px;
+  margin-bottom: 30px; }
+
+#sect-page-about-us div.accordion {
+  width: 100%; }
+
+#sect-page-about-us div.card {
+  border: none;
+  background-color: #ffffff; }
+  #sect-page-about-us div.card div.card-header {
+    color: #e2b733;
+    font-size: 26px;
+    font-family: Nunito;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer; }
+    #sect-page-about-us div.card div.card-header a.card-title div.i-cart-wrapper {
+      position: relative;
+      width: 36px;
+      border-width: 30px 0px 0;
+      border-style: solid;
+      border-color: #e2b733 transparent;
+      float: left;
+      margin-right: 30px; }
+    #sect-page-about-us div.card div.card-header a.card-title div.i-cart-wrapper:before {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0px;
+      top: 0px;
+      left: 0px;
+      border-width: 10px 18px 0px;
+      border-style: solid;
+      border-color: #e2b733 transparent transparent; }
+    #sect-page-about-us div.card div.card-header a.card-title i {
+      color: #ffffff;
+      font-size: 12px;
+      position: absolute;
+      top: -17px;
+      left: 13px;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+  #sect-page-about-us div.card div.card-header.collapsed {
+    color: #111111;
+    background-color: #ffffff; }
+    #sect-page-about-us div.card div.card-header.collapsed a.card-title div.i-cart-wrapper {
+      border-color: transparent transparent; }
+    #sect-page-about-us div.card div.card-header.collapsed a.card-title div.i-cart-wrapper:before {
+      content: "";
+      border-color: transparent transparent transparent; }
+    #sect-page-about-us div.card div.card-header.collapsed a.card-title i {
+      color: #111111;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg); }
+  #sect-page-about-us div.card div.card-block {
+    font-size: 16px;
+    line-height: 1.31;
+    text-align: justify;
+    color: #555150;
+    font-family: Nunito;
+    width: 525px;
+    padding-left: 89px; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
