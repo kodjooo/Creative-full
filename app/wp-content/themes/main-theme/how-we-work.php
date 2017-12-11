@@ -56,7 +56,7 @@ get_header(); ?>
 
 <!-- Our Services (start) -->
 
-<section id="sect-page-partners">
+<section id="sect-page-how-we-work">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container">
@@ -76,34 +76,104 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
-					<div class="col-12 partners-repeater">
-						<div class="row">
-							Ghbdtn
-							<?php 
-							$partners_repeater = get_field('partners_repeater');
-              if($partners_repeater) { 
-              foreach($partners_repeater as $partner_repeater) { 
-              $name = $partner_repeater['name'];
-              $image = $partner_repeater['image'];
-              $description = $partner_repeater['description'];
-              ?>
-							<div class="col-6 partner-wrapper">
-								<div class="row m-0">
-									<div class="col-5">
-										<div class="row">
-											<img src="<?php echo $image; ?>" alt="">
-										</div>
-									</div>
-									<div class="col-7">
-										<div class="row">
-											<div class="name-partner"><?php echo $name; ?></div>
-											<div class="desc-partner"><?php echo $description; ?></div>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-							<?php } } ?>
+					<div class="col-12">
+						<div class="row justify-content-center">
+							
+              <div class="sub-heading text-center h3"><?php the_field('heading_for_stages'); ?></div>
+              <div class="col-12">
+              	<div class="row">
+		              <div class="shagi owl-carousel owl-theme">
+		            					<?php
+							        		$stages_settings = get_field('stages_settings');
+						              if($stages_settings) { 
+						              $num = 1;
+						              foreach($stages_settings as $stage_setting) { 
+						              $heading_stage = $stage_setting['heading_stage'];
+						              $description_stage = $stage_setting['description_stage'];
+						              $backgroung_stage = $stage_setting['backgroung_stage'];
+		                      ?>
+		                      <div class="shagi-single horisontal spoiler non-visible">
+		                          <div class="shagi-title">
+		                              <div class="number"></div>
+		                              <p><?php echo $heading_stage; ?></p>
+		                          </div>
+		                          <div class="shagi-desc"><?php echo $description_stage; ?></div>
+		                          <div class="shagi-cover-bg"><img src="<?php echo $backgroung_stage; ?>"></div>
+		                      </div>
+		                  <?php } } ?>
+		              </div>  
+              	</div>
+              </div>      
+						</div>
+            
+					</div>
+					<div class="col-12">
+						<div class="row justify-content-center">
+							
+              <div class="sub-heading big-marg text-center h3"><?php the_field('heading_for_advantages'); ?></div>
+              <div class="col-12">
+              	<div class="row">
+		              
+          					<?php
+				        		$advantages_settings = get_field('advantages_settings');
+			              if($advantages_settings) { 
+			              $num = 1;
+			              foreach($advantages_settings as $advantages) { 
+			              $icon_advantage = $advantages['icon_advantage'];
+			              $heading_advantage = $advantages['heading_advantage'];
+			              $description_advantage = $advantages['description_advantage'];
+			              if($num % 2 === 0) {
+                    ?>
+
+                    <div class="col-6 advantage-hover">
+                    	<div class="row">
+                    		<div class="col-4">
+                    			<div class="row height-100 justify-content-center align-items-center">
+                    				<div class="icon-advantage-wrapper"><span class="<?php echo $icon_advantage; ?>"></span></div>
+                    			</div>
+                    		</div>
+                    		<div class="col-8">
+                    			<div class="row">
+                    				<div class="advantage-item-wrapper-left">
+	                    				<div class="head-advantage"><?php echo $heading_advantage; ?></div>
+	                    				<div class="desc-advantage"><?php echo $description_advantage; ?></div>
+                    				</div>
+                    			</div>
+                    		</div>
+                    	</div>
+                    </div>
+
+                    <?php
+                    $num++;
+			              }
+										else {
+										?>
+
+										<div class="col-6 advantage-hover">
+                    	<div class="row">
+                    		<div class="col-8">
+                    			<div class="row">
+                    				<div class="advantage-item-wrapper-right">
+	                    				<div class="head-advantage"><?php echo $heading_advantage; ?></div>
+	                    				<div class="desc-advantage"><?php echo $description_advantage; ?></div>
+                    				</div>
+                    			</div>
+                    		</div>
+                    		<div class="col-4">
+                    			<div class="row height-100 justify-content-center align-items-center">
+                    				<div class="icon-advantage-wrapper"><span class="<?php echo $icon_advantage; ?>"></span></div>
+                    			</div>
+                    		</div>
+                    	</div>
+                    </div>
+
+                		<?php
+                		$num++;
+                		} } } 
+                		?>
+	              	
+            		</div>
+            	</div>      
 						</div>
 					</div>
 				</div>

@@ -41,25 +41,7 @@ $(document).ready(function(){
 
             $("a.custom-logo-link img").addClass("mini");
 
-            // if($(".main-search-mini-wrapper").hasClass("active-top")){
 
-            //     $(".main-search-mini-wrapper").removeClass("active-top");
-
-            //     $(".main-search-mini-wrapper").addClass("active");
-
-            // }
-
-            // if($(".main-menu-mini-wrapper").hasClass("active-top")){
-
-            //     $(".main-menu-mini-wrapper").removeClass("active-top");
-
-            //     $(".main-menu-mini-wrapper").addClass("active");
-
-            // }
-
-            // $(".main-search-mini-wrapper").removeClass('active-top').addClass("active");
-
-            // $(".main-menu-mini-wrapper").removeClass('active-top').addClass("active");
 
 
 
@@ -73,28 +55,34 @@ $(document).ready(function(){
 
             $("a.custom-logo-link img.custom-logo").removeClass("mini");
 
-            // if($(".main-search-mini-wrapper").hasClass("active")){
 
-            //     $(".main-search-mini-wrapper").removeClass("active");
-
-            //     $(".main-search-mini-wrapper").addClass("active-top");
-
-            // }
-
-            // if($(".main-menu-mini-wrapper").hasClass("active")){
-
-            //     $(".main-menu-mini-wrapper").removeClass("active");
-
-            //     $(".main-menu-mini-wrapper").addClass("active-top");
-
-            // }
-
-            // $(".main-search-mini-wrapper").removeClass('active').addClass("active-top");
-
-            // $(".main-menu-mini-wrapper").removeClass('active').addClass("active-top");
 
         }
 
     });//scroll
 
 })
+
+
+if(document.documentElement.clientWidth > 896) {
+    $(document).ready(function(){
+        $(".spoiler:first").removeClass("non-visible").addClass("visible");
+    });
+    $(".spoiler.non-visible").click(function(){
+        $(".spoiler.visible").removeClass("visible").addClass("non-visible");
+        $(this).removeClass("non-visible").addClass("visible");
+    });
+};
+if(document.documentElement.clientWidth < 896) {
+    $(document).ready(function(){
+        $(".spoiler").removeClass("non-visible").addClass("visible");
+    });
+    $(".shagi").owlCarousel({
+        nav : true, // Show next and prev buttons
+        slideSpeed : 700,
+        dots : true,
+        items: 1,
+        autoplay : false,
+        navText: ['Лево', 'Право']
+    });
+};

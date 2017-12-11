@@ -21,6 +21,10 @@
 	<link rel="stylesheet" href="/wp-content/themes/main-theme/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Saira|Muli|Nunito" rel="stylesheet">
 	<link rel="stylesheet" href="/wp-content/themes/main-theme/css/simple-line-icons.css">
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/main-theme/css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/main-theme/css/owl.theme.default.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 	
 
 	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
@@ -34,7 +38,7 @@
 	<script>loadCSS( "/wp-content/themes/main-theme/css/header.min.css?ver=1.0.0", false, "all" );</script>
 	<script>loadCSS( "/wp-content/themes/main-theme/style.css?ver=1.0.0", false, "all" );</script>
 	<!-- Load CSS End -->
-
+	
 	<!-- Load CSS Compiled without JS -->
 	<noscript>
 		<link rel="stylesheet" href="/wp-content/themes/main-theme/css/fonts.min.css">

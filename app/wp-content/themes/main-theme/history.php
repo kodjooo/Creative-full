@@ -56,7 +56,7 @@ get_header(); ?>
 
 <!-- Our Services (start) -->
 
-<section id="sect-page-partners">
+<section id="sect-page-history">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container">
@@ -76,33 +76,81 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
-					<div class="col-12 partners-repeater">
+					<div class="col-12">
 						<div class="row">
-							<?php 
-							$partners_repeater = get_field('partners_repeater');
-              if($partners_repeater) { 
-              foreach($partners_repeater as $partner_repeater) { 
-              $name = $partner_repeater['name'];
-              $image = $partner_repeater['image'];
-              $description = $partner_repeater['description'];
-              ?>
-							<div class="col-6 partner-wrapper">
-								<div class="row m-0">
-									<div class="col-5">
-										<div class="row">
-											<img src="<?php echo $image; ?>" alt="">
+							<div id="accordion" class="accordion">
+								<div class="card m-b-0">
+								<?php 
+								$history_repeater = get_field('history_repeater');
+				        if($history_repeater) { 
+				        $num = 1;
+				        foreach($history_repeater as $history_repeat) { 
+				        $year_moment = $history_repeat['year_moment'];
+				        $heading_moment = $history_repeat['heading_moment'];
+				        $image_moment = $history_repeat['image_moment'];
+				        $description_moment = $history_repeat['description_moment'];
+				        if ( $num == 1 ){
+					      ?>
+								<div class="card-header" data-toggle="collapse" data-parent="#accordion" href="#collapse_<?php echo $num; ?>" aria-expanded="true">
+								<?php 
+								} else {
+								?>
+								<div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse_<?php echo $num; ?>">
+								<?php 
+								}
+								?>
+										<a class="card-title">
+											<div class="col-12">
+												<div class="row">
+													<div class="col-2">
+														<div class="row">
+															<div class="year-wrapper"><?php echo $year_moment; ?></div>
+														</div>
+													</div>
+													<div class="col-10">
+														<div class="row height-100 align-items-center">
+															<div class="heading-wrapper"><?php echo $heading_moment; ?></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<?php
+									if ( $num == 1 ){
+									?>
+									<div id="collapse_<?php echo $num; ?>" class="card-block collapse show">
+									  <div class="col-12">
+											<div class="row">
+												<div class="moment-desc-wrapper">
+													<img src="<?php echo $image_moment; ?>" alt="">
+					                <?php echo $description_moment; ?>
+			                	</div>
+											</div>
 										</div>
 									</div>
-									<div class="col-7">
-										<div class="row">
-											<div class="name-partner"><?php echo $name; ?></div>
-											<div class="desc-partner"><?php echo $description; ?></div>
+									<?php 
+									} else {
+									?>
+									<div id="collapse_<?php echo $num; ?>" class="card-block collapse">
+									  <div class="col-12">
+											<div class="row">
+												<div class="moment-desc-wrapper">
+													<img src="<?php echo $image_moment; ?>" alt="">
+					                <?php echo $description_moment; ?>
+			                	</div>
+											</div>
 										</div>
 									</div>
+									<?php 
+									}
+									?>
+								<?php
+								$num++;
+								} } 
+								?>
 								</div>
-								
 							</div>
-							<?php } } ?>
 						</div>
 					</div>
 				</div>

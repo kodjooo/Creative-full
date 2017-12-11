@@ -3302,6 +3302,277 @@ div.sidebar-wrapper li:hover {
     width: 525px;
     padding-left: 89px; }
 
+#sect-page-history h1.heading-page {
+  font-size: 48px;
+  text-align: left;
+  color: #111111;
+  margin-bottom: 30px; }
+
+#sect-page-history div.text-page {
+  width: 775px;
+  color: #555150;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: justify;
+  font-family: Nunito; }
+
+#sect-page-history div.accordion {
+  width: 100%; }
+  #sect-page-history div.accordion div.card {
+    border: none;
+    background-color: #ffffff; }
+    #sect-page-history div.accordion div.card div.card-header {
+      border: none;
+      background-color: #ffffff;
+      cursor: pointer; }
+      #sect-page-history div.accordion div.card div.card-header div.year-wrapper {
+        font-family: Montserrat;
+        font-size: 52px;
+        font-weight: 200;
+        color: #e2b733;
+        padding-left: 30px; }
+      #sect-page-history div.accordion div.card div.card-header div.heading-wrapper {
+        font-size: 32px;
+        color: #e2b733;
+        padding-left: 40px; }
+    #sect-page-history div.accordion div.card div.card-header.collapsed div.heading-wrapper {
+      color: #111111; }
+    #sect-page-history div.accordion div.card div.moment-desc-wrapper {
+      margin-left: 50px;
+      padding-left: 200px;
+      border-bottom: 1px solid #e2b733;
+      font-size: 16px;
+      line-height: 1.63;
+      text-align: justify;
+      color: #555150;
+      font-family: Nunito; }
+      #sect-page-history div.accordion div.card div.moment-desc-wrapper img {
+        width: 360px;
+        height: 220px;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 15px; }
+
+#sect-page-how-we-work h1.heading-page {
+  font-size: 48px;
+  text-align: left;
+  color: #111111;
+  margin-bottom: 30px; }
+
+#sect-page-how-we-work div.text-page {
+  width: 775px;
+  color: #555150;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: justify;
+  font-family: Nunito; }
+
+#sect-page-how-we-work div.sub-heading {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #111111;
+  margin: 40px 0 30px; }
+
+#sect-page-how-we-work div.sub-heading.big-marg {
+  margin: 75px 0 70px; }
+
+#sect-page-how-we-work .shagi {
+  counter-reset: number;
+  margin: 35px auto;
+  width: 990px; }
+  #sect-page-how-we-work .shagi .number:before {
+    counter-increment: number 1;
+    content: counter(number);
+    font-size: 38px;
+    font-weight: bold;
+    top: -6px;
+    position: absolute;
+    left: 13px; }
+  #sect-page-how-we-work .shagi .shagi-single.horisontal {
+    display: inline-block;
+    width: 70px;
+    vertical-align: top;
+    padding: 10px;
+    height: 450px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  #sect-page-how-we-work .shagi .shagi-single .shagi-desc {
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  #sect-page-how-we-work .shagi .shagi-single .shagi-title .number {
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    border: 2px solid #000;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative; }
+  #sect-page-how-we-work .shagi .shagi-single.visible .shagi-desc {
+    display: block;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: justify;
+    font-family: Nunito;
+    color: #212121;
+    padding: 20px 25px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  #sect-page-how-we-work .shagi .shagi-single.spoiler.visible.horisontal:after {
+    content: '';
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2; }
+  #sect-page-how-we-work .shagi .shagi-single.spoiler.visible.horisontal {
+    width: 615px;
+    height: 450px;
+    background: rgba(220, 220, 220, 0.75);
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    overflow: hidden; }
+  #sect-page-how-we-work .shagi .shagi-single.spoiler.non-visible .shagi-title p {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    vertical-align: middle;
+    margin-left: 28px !important;
+    float: right;
+    display: block;
+    width: 50px;
+    margin-top: 10px; }
+  #sect-page-how-we-work .shagi .shagi-single.spoiler .shagi-title p {
+    font-size: 24px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #000;
+    font-family: Tinos;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #sect-page-how-we-work .shagi .shagi-single.spoiler.visible .shagi-title p {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    margin-left: 60px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  #sect-page-how-we-work .shagi .shagi-single.non-visible.spoiler.horisontal {
+    background: #000;
+    -webkit-transition: background 200ms linear, color 200ms linear;
+    transition: background 200ms linear, color 200ms linear;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  #sect-page-how-we-work .shagi .shagi-single.non-visible.spoiler.horisontal:hover {
+    background: #ffb400;
+    cursor: pointer; }
+  #sect-page-how-we-work .shagi .shagi-single.non-visible.spoiler.horisontal .number {
+    border-color: #e2b733;
+    color: #e2b733; }
+  #sect-page-how-we-work .shagi .shagi-single.non-visible.spoiler.horisontal p {
+    color: #e2b733; }
+  #sect-page-how-we-work .shagi .shagi-single.non-visible.spoiler.horisontal:hover .number {
+    border-color: #000000;
+    color: #000000; }
+  #sect-page-how-we-work .shagi .shagi-single.non-visible.spoiler.horisontal:hover p {
+    color: #000000; }
+  #sect-page-how-we-work .shagi .visible .shagi-cover-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    opacity: 0.5;
+    width: inherit;
+    height: inherit;
+    margin-left: -10px; }
+  #sect-page-how-we-work .shagi .non-visible .shagi-cover-bg {
+    display: none; }
+  #sect-page-how-we-work .shagi .shagi-cover-bg img {
+    height: 100%;
+    width: 100%; }
+  #sect-page-how-we-work .shagi .owl-theme .owl-dots, #sect-page-how-we-work .shagi .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent; }
+  #sect-page-how-we-work .shagi .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    margin-top: 15px; }
+  #sect-page-how-we-work .shagi .owl-carousel .owl-dot, #sect-page-how-we-work .shagi .owl-carousel .owl-nav .owl-next, #sect-page-how-we-work .shagi .owl-carousel .owl-nav .owl-prev {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  #sect-page-how-we-work .shagi .owl-theme .owl-dots .owl-dot.active span, #sect-page-how-we-work .shagi .owl-theme .owl-dots .owl-dot:hover span {
+    background: #000; }
+  #sect-page-how-we-work .shagi .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #ffb400;
+    display: block;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    -webkit-border-radius: 30px;
+    border-radius: 30px; }
+
+#sect-page-how-we-work div.advantage-item-wrapper-left {
+  width: 345px;
+  margin: 0 auto; }
+  #sect-page-how-we-work div.advantage-item-wrapper-left div.head-advantage {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 15px;
+    margin-top: 10px; }
+  #sect-page-how-we-work div.advantage-item-wrapper-left div.desc-advantage {
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+    font-family: Nunito; }
+
+#sect-page-how-we-work div.advantage-item-wrapper-right {
+  width: 345px;
+  margin: 0 auto; }
+  #sect-page-how-we-work div.advantage-item-wrapper-right div.head-advantage {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color: #000000;
+    margin-bottom: 15px;
+    margin-top: 10px; }
+  #sect-page-how-we-work div.advantage-item-wrapper-right div.desc-advantage {
+    font-size: 18px;
+    color: #000000;
+    text-align: right;
+    font-family: Nunito; }
+
+#sect-page-how-we-work div.icon-advantage-wrapper span {
+  font-size: 72px;
+  color: #000000; }
+
+#sect-page-how-we-work div.advantage-hover:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+  background-color: #000000; }
+  #sect-page-how-we-work div.advantage-hover:hover div.head-advantage {
+    color: #e2b733; }
+  #sect-page-how-we-work div.advantage-hover:hover div.desc-advantage {
+    color: #ffffff; }
+  #sect-page-how-we-work div.advantage-hover:hover div.icon-advantage-wrapper span {
+    color: #e2b733; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
