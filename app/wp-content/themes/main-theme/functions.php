@@ -2,6 +2,12 @@
 
 add_image_size( 'calc-thumb', 100, 100, true ); // Кадрирование изображения
 
+add_image_size( 'gallery-project-thumb', 360, 250, true ); // Кадрирование изображения
+
+add_image_size( 'gallery-materials-thumb', 165, 165, true ); // Кадрирование изображения
+
+add_image_size( 'serv-details-thumb', 760, 420, true ); // Кадрирование изображения
+
 add_theme_support( 'custom-logo' );
 
 register_nav_menus( array( 

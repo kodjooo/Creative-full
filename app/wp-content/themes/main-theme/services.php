@@ -95,7 +95,7 @@ get_header(); ?>
 									}
 								</style>
 								<div class="col-6">
-									<a href="<?php echo $child_this_page->ID ?>">
+									<a href="<?php echo get_page_link( $child_this_page->ID ); ?>">
 										<div class="col-12 service-wrapper service-wrapper-<?php echo $number; ?>">
 											<div class="row height-100">
 												<div class="col-12 service-value align-self-center">

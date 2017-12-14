@@ -86,3 +86,45 @@ if(document.documentElement.clientWidth < 896) {
         navText: ['Лево', 'Право']
     });
 };
+
+$(function(){
+  $(".portfolio").mixItUp({
+    // Нужно сначала дать display: none всем фильтрующимся элементам
+    // При загрузке фильтрует по этому фильтру
+    load: {
+     filter:'all'
+    },
+    // Добавляет класс акт. кнопке
+    controls: {
+     activeClass:'on'
+    } 
+    // animation: {
+    //  enable:true, - вкл. анимацию
+    //  effects:'scale fade',
+    //  duration:700
+    // }
+    // Поддерживаемые значения: fade, scale, translateY, translateZ, rotateX, rotateY, rotateZ, stagger, translateX
+  });
+});
+
+$(function(){
+  $(".materials-galary").mixItUp({
+    // Нужно сначала дать display: none всем фильтрующимся элементам
+    // При загрузке фильтрует по этому фильтру
+    load: {
+     filter:'.laminate'
+    },
+    // Добавляет класс акт. кнопке
+    controls: {
+     activeClass:'on'
+    } 
+    // animation: {
+    //  enable:true, - вкл. анимацию
+    //  effects:'scale fade',
+    //  duration:700
+    // }
+    // Поддерживаемые значения: fade, scale, translateY, translateZ, rotateX, rotateY, rotateZ, stagger, translateX
+  });
+});
+
+

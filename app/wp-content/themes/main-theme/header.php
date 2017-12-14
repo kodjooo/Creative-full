@@ -24,6 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/main-theme/css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/main-theme/css/owl.theme.default.min.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/wp-content/themes/main-theme/js/jquery.mixitup.js"></script>
 
 	
 
@@ -91,7 +92,7 @@
 		</div>
 	</div>	
 
-	
+<?php wp_head() ?>
 </header>
 
 <!-- Header (footer) -->
