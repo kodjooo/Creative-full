@@ -120,7 +120,7 @@ setup_postdata( $post );
 									}
 								</style>
 								<div class="col-6">
-									<a href="<?php echo $child_this_page->ID ?>">
+									<a href="<?php echo get_page_link( $child_this_page->ID ); ?>">
 										<div class="col-12 service-wrapper service-wrapper-<?php echo $number; ?>">
 											<div class="row height-100">
 												<div class="col-12 service-value align-self-center">
@@ -155,6 +155,162 @@ setup_postdata( $post );
 			<div class="container">
 				<div class="row">
 					<div class="col-12 align-c h2-main">Look Our Latest Projects</div>
+					<div class="controls text-center pb-30">
+            <a href="/projects/"><button type="button" class="button main-my-button">ALL PROJECT</button></a>
+            <div class="many-buttons">
+              <?php
+              $flooring = get_field('gallery_title_flooring', '72');
+              if( $flooring ): ?>
+              <button type="button" class="button my-button filter" data-filter=".flooring"><?php echo $flooring; ?></button>
+              <?php endif; ?>
+              <?php
+              $kuhni = get_field('gallery_title_kuhni', '72');
+              if( $kuhni ): ?>
+              <button type="button" class="button my-button filter" data-filter=".kuhni"><?php echo $kuhni; ?></button>
+              <?php endif; ?>
+              <?php
+              $bathroom = get_field('gallery_title_bathroom', '72');
+              if( $bathroom ): ?>
+              <button type="button" class="button my-button filter" data-filter=".bathroom"><?php echo $bathroom; ?></button>
+              <?php endif; ?>
+              <?php
+              $counertops = get_field('gallery_title_counertops', '72');
+              if( $counertops ): ?>
+              <button type="button" class="button my-button filter" data-filter=".counertops"><?php echo $counertops; ?></button>
+              <?php endif; ?>
+              <?php
+              $cabinets = get_field('gallery_title_cabinets', '72');
+              if( $cabinets ): ?>
+              <button type="button" class="button my-button filter" data-filter=".cabinets"><?php echo $cabinets; ?></button>
+              <?php endif; ?>
+        		</div>
+        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="row">
+					<!-- Article Start -->
+            <article class="col-12 gallery-art-wrapper" id="article-<?php the_ID(); ?>">
+                <div class="article_content">
+                    <div class="gallery portfolio-in-main">
+                        <?php
+
+                        $images = get_field('gallery_flooring', '72');
+                        ksort($images);
+                        if( $images ): 
+                        	$number_gal_flooring = 1;
+                        	?>
+                            <?php foreach( $images as $image ): ?>
+                            	<?php if( $number_gal_flooring <= 4 ): ?>
+                                <a href="<?php echo $image['url']; ?>" class="col-3 mix flooring fancybox" rel="gallery-1">
+                                    <img src="<?php echo $image['sizes']['gallery-project-thumb']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                    <div class="project-item-wrapper">
+			                                <span class="project-item-head"><?php echo $image['caption']; ?></span>
+			                                <span class="project-item-desc"><?php echo $image['description']; ?></span>
+			                                <span class="icon-eye"></span>
+		                            		</div>
+                                </a>
+                                <?php $number_gal_flooring++; ?>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                        <?php
+
+                        $images = get_field('gallery_kuhni', '72');
+                        ksort($images);
+
+                        if( $images ): 
+                        	$number_gal_kuhni = 1;
+                        	?>
+                            <?php foreach( $images as $image ): ?>
+                            	<?php if( $number_gal_kuhni <= 4 ): ?>
+                                <a href="<?php echo $image['url']; ?>" class="col-3 mix kuhni fancybox" rel="gallery-2">
+                                    <img src="<?php echo $image['sizes']['gallery-project-thumb']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                    <div class="project-item-wrapper">
+			                                <span class="project-item-head"><?php echo $image['caption']; ?></span>
+			                                <span class="project-item-desc"><?php echo $image['description']; ?></span>
+			                                <span class="icon-eye"></span>
+		                            		</div>
+                                </a>
+                            		<?php $number_gal_kuhni++; ?>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                        <?php
+
+                        $images = get_field('gallery_bathroom', '72');
+                        ksort($images);
+
+                        if( $images ): 
+                        	$number_gal_bathroom = 1;
+                        	?>
+                            <?php foreach( $images as $image ): ?>
+                            	<?php if( $number_gal_bathroom <= 4 ): ?>
+                                <a href="<?php echo $image['url']; ?>" class="col-3 mix bathroom fancybox" rel="gallery-3">
+                                    <img src="<?php echo $image['sizes']['gallery-project-thumb']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                    <div class="project-item-wrapper">
+			                                <span class="project-item-head"><?php echo $image['caption']; ?></span>
+			                                <span class="project-item-desc"><?php echo $image['description']; ?></span>
+			                                <span class="icon-eye"></span>
+		                            		</div>
+                                </a>
+                            		<?php $number_gal_bathroom++; ?>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                        <?php
+
+                        $images = get_field('gallery_counertops', '72');
+                        ksort($images);
+
+
+                        if( $images ): 
+                        	$number_gal_counertops = 1;
+                        	?>
+                            <?php foreach( $images as $image ): ?>
+                            	<?php if( $number_gal_counertops <= 4 ): ?>
+                                <a href="<?php echo $image['url']; ?>" class="col-3 mix counertops fancybox" rel="gallery-4">
+                                    <img src="<?php echo $image['sizes']['gallery-project-thumb']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                    <div class="project-item-wrapper">
+			                                <span class="project-item-head"><?php echo $image['caption']; ?></span>
+			                                <span class="project-item-desc"><?php echo $image['description']; ?></span>
+			                                <span class="icon-eye"></span>
+		                            		</div>
+                                </a>
+                            		<?php $number_gal_counertops++; ?>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                        <?php
+
+                        $images = get_field('gallery_cabinets', '72');
+                        ksort($images);
+
+                        if( $images ): 
+                        	$number_gal_cabinets = 1;
+                        	?>
+                            <?php foreach( $images as $image ): ?>
+                            	<?php if( $number_gal_cabinets <= 4 ): ?>
+                                <a href="<?php echo $image['url']; ?>" class="col-3 mix cabinets fancybox" rel="gallery-5">
+                                    <img src="<?php echo $image['sizes']['gallery-project-thumb']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                    <div class="project-item-wrapper">
+			                                <span class="project-item-head"><?php echo $image['caption']; ?></span>
+			                                <span class="project-item-desc"><?php echo $image['description']; ?></span>
+			                                <span class="icon-eye"></span>
+		                            		</div>
+                                </a>
+                                <?php $number_gal_cabinets++; ?>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </article>
+            <!-- Article End -->
 				</div>
 			</div>
 		</div>

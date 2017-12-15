@@ -8,6 +8,8 @@ add_image_size( 'gallery-materials-thumb', 165, 165, true ); // Кадриров
 
 add_image_size( 'serv-details-thumb', 760, 420, true ); // Кадрирование изображения
 
+add_image_size( 'ss-thumb', 300, 300, true ); // Кадрирование изображения
+
 add_theme_support( 'custom-logo' );
 
 register_nav_menus( array( 
@@ -15,6 +17,8 @@ register_nav_menus( array(
  'main-menu' => __( 'Main menu' ),
 
  'sidebar-menu' => __( 'Sidebar menu' ),
+
+ 'single-services-sidebar-menu' => __( 'Single Services Sidebar menu' )
 
  ) );
 

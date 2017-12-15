@@ -575,7 +575,106 @@ div.cont-i-wrapper
 	background-color: $gray
 	div.h2-main
 		color: $white
-
+	div.controls
+		margin-top: 50px
+		margin-bottom: 35px
+		width: 100%
+		div.many-buttons
+			float: right
+		button.main-my-button
+			text-transform: uppercase
+			font-family: Nunito
+			font-size: 16px
+			font-weight: 900
+			color: $gold
+			background-color: transparent
+			border: 1px solid $gold
+			border-radius: 100px
+			padding: 5px 15px
+			@include transition(0.5s)
+			cursor: pointer
+			outline: none
+			float: left
+		button.main-my-button:hover
+			background-color: $gold
+			color: #212121
+		button.my-button
+			text-transform: uppercase
+			font-family: Nunito
+			font-size: 16px
+			font-weight: 900
+			color: $white
+			background-color: transparent
+			border: none
+			padding: 5px 15px
+			@include transition(0.5s)
+			cursor: pointer
+			outline: none
+		button.my-button:hover
+			border-radius: 100px
+			background-color: $gray
+			color: $gold
+	a.mix
+		display: none
+		padding: 0px
+		margin: -2px
+		position: relative
+		div.project-item-wrapper
+			position: absolute
+			top: 33%
+			left: 50%
+			margin-left: -75px
+			color: $white
+			width: 150px
+			height: 100px
+			display: none
+		img
+			width: 100%
+			height: 100%
+	a.mix:hover
+		display: none
+		padding: 0px
+		margin: -2px
+		position: relative
+		div.project-item-wrapper
+			position: absolute
+			top: 33%
+			left: 50%
+			margin-left: -75px
+			color: $white
+			width: 150px
+			height: 100px
+			display: block
+			span.project-item-head
+				font-family: Montserrat
+				font-size: 18px
+				font-style: normal
+				text-align: center
+				display: block
+			span.project-item-desc
+				font-family: Tinos
+				font-size: 14px
+				font-style: italic
+				text-align: center
+				display: block
+				margin-top: 5px
+			span.icon-eye
+				display: block
+				color: $gold
+				text-align: center
+				font-size: 24px
+				margin-top: 5px
+	.mix:hover:before
+		content: ''
+		position: absolute
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(33, 33, 33, 0.8)
+	.gallery-art-wrapper
+		padding: 0px
+		margin: 2px
+	
 
 // Latest Projects (finish)
 
@@ -586,7 +685,7 @@ div.cont-i-wrapper
 #sect-top-mini
 	background-color: $sub-gray
 	padding-top: 230px
-	padding-bottom: 85px
+	padding-bottom: 60px
 	a
 		text-decoration: none
 	div.category-heading
@@ -613,6 +712,45 @@ div.cont-i-wrapper
 		@include transition(0.3s)
 	span.text-in-top-button:hover:before
 		width: 40px
+	div.breadcrumb-main-wrapper
+		margin-top: 30px
+		div.breadcrumb-main
+			font-family: Montserrat
+			font-size: 12px
+			color: $white
+			text-transform: uppercase
+			span.itemListElement:first-child
+				margin-left: 15px
+			span.itemListElement:last-child
+				margin-left: 25px
+				background-color: rgba(0, 0, 0, 0.6)
+				padding: 6px 10px
+				color: $gold
+				position: relative
+			span.itemListElement:last-child:before
+				content: ''
+				width: 0
+				height: 0
+				border-top: 13px solid transparent
+				border-left: 13px solid rgba(0, 0, 0, 0.6)
+				border-bottom: 13px solid transparent
+				position: absolute
+				top: 0px
+				right: -13px
+			span.itemListElement
+				margin-left: 35px
+				a
+					color: $white
+					@include transition(0.3s)
+					position: relative
+					i
+						color: $gold
+						font-size: 5px
+						position: absolute
+						left: -12px
+						top: 5px
+				a:hover
+					color: $gold
 
 
 
@@ -636,6 +774,11 @@ div.sidebar-wrapper
 			padding: 9px 18px
 			@include transition(0.5s)
 	li:hover
+		background-color: $gray
+		a
+			text-decoration: none
+			color: $gold
+	li.current-menu-item
 		background-color: $gray
 		a
 			text-decoration: none
@@ -824,7 +967,6 @@ div.sidebar-wrapper
 					border-color: $gold transparent
 					float: left
 					margin-right: 30px
-
 				div.i-cart-wrapper:before
 					content: ""
 					position: absolute
@@ -1189,6 +1331,8 @@ div.sidebar-wrapper
 			float: left
 		button.main-my-button:hover
 			background-color: $gold
+		button.main-my-button.on
+			background-color: $gold
 		button.my-button
 			text-transform: uppercase
 			font-family: Nunito
@@ -1202,6 +1346,10 @@ div.sidebar-wrapper
 			cursor: pointer
 			outline: none
 		button.my-button:hover
+			border-radius: 100px
+			background-color: $gray
+			color: $gold
+		button.my-button.on
 			border-radius: 100px
 			background-color: $gray
 			color: $gold
@@ -1330,6 +1478,10 @@ div.sidebar-wrapper
 			border-radius: 100px
 			background-color: $gray
 			color: $gold
+		button.my-button.on
+			border-radius: 100px
+			background-color: $gray
+			color: $gold
 	a.mix
 		display: none
 		padding: 13px
@@ -1392,9 +1544,9 @@ div.sidebar-wrapper
 	.m-b-60
 		margin-bottom: 40px
 	a.a-wrapper.chet:hover
-		box-shadow: -5px 5px 25px rgba(0, 0, 0, 0.3)
+		box-shadow: 3px 5px 30px rgba(0, 0, 0, 0.7)
 	a.a-wrapper.nechet:hover
-		box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3)
+		box-shadow: 3px 5px 30px rgba(0, 0, 0, 0.7)
 	a.a-wrapper
 		display: block
 		width: 100%
@@ -1501,6 +1653,408 @@ div.sidebar-wrapper
 		
 
 // PAGE SERVICES DETAILS (finish)
+
+
+// PAGE SINGLE SERVICES (start)
+
+#sect-page-single-services
+	padding-bottom: 0px
+	h1.heading-page
+		font-size: 48px
+		text-align: left
+		color: $gray
+		margin-bottom: 30px
+	div.text-page
+		width: 775px
+		color: $sub-gray
+		font-size: 16px
+		line-height: 1.63
+		text-align: justify
+		font-family: Nunito
+	div.ss-top-galery
+		margin-top: 15px
+		margin-bottom: 70px
+		a
+			padding: 0px
+			img
+				width: 100%;
+				height: 100%;
+	div.faq-heading
+		font-size: 24px
+		text-align: left
+		text-transform: uppercase
+		color: $gray
+		margin-bottom: 35px
+	div.faq-repeter-wrapper
+		margin-bottom: 25px
+		div.faq-repeter-heading
+			color: $gray
+			font-size: 26px
+			font-family: Nunito
+			margin-bottom: 10px
+		div.faq-repeter-description
+			font-family: Nunito
+			font-size: 16px
+			line-height: 1.31
+			text-align: justify
+			color: $sub-gray
+			margin-left: 52px
+		div.faq-repeter-icon
+			position: relative
+			top: 10px
+			width: 36px
+			border-width: 30px 0px 0
+			border-style: solid
+			border-color: $gold transparent
+			float: left
+			margin-right: 15px
+		div.faq-repeter-icon:before
+			content: ""
+			position: absolute
+			height: 0
+			width: 0px
+			top: 0px
+			left: 0px
+			border-width: 10px 18px 0px
+			border-style: solid
+			border-color: $gold transparent transparent
+		i
+			color: $white
+			font-size: 10px
+			position: absolute
+			top: -17px
+			left: 14px
+			transform: rotate(90deg);
+	div.catalog-heading
+		font-size: 24px
+		color: #111111
+		text-transform: uppercase
+		padding-left: 10px
+		margin-bottom: 20px
+	a.mix
+		padding: 13px
+		position: relative
+		display: block
+		width: 100%
+		float: left
+		img
+			width: 100%
+			height: 100%
+	a.mix:hover
+		padding: 13px
+		position: relative
+	.mix:hover:before
+		content: ''
+		position: absolute
+		top: 13px
+		width: calc(100% - 26px)
+		height: calc(100% - 26px)
+		background-color: rgba(0, 0, 0, 0.5)
+	a.mix-2:hover
+		position: relative
+	.mix-2:hover:before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.5)
+	button.catalog-button
+		font-family: Nunito
+		font-size: 18px
+		text-align: center
+		text-transform: uppercase
+		border-radius: 100px
+		border: 2px solid $gray
+		background-color: transparent
+		width: calc(100% - 30px)
+		padding: 5px 0px
+		outline: none
+		cursor: pointer
+		margin: 25px auto 0px
+		a
+			width: 100%
+			height: 100%
+			display: block
+			color: $gray
+			text-decoration: none
+	button.catalog-button:hover
+		background-color: $gold
+	a.mix
+		padding: 0px
+		margin: 0px
+		position: relative
+		div.project-item-wrapper
+			position: absolute
+			top: 33%
+			left: 50%
+			margin-left: -75px
+			color: $white
+			width: 150px
+			height: 100px
+			display: none
+		img
+			width: 100%
+			height: 100%
+	a.mix:hover
+		padding: 0px
+		margin: 0px
+		position: relative
+		div.project-item-wrapper
+			position: absolute
+			top: 33%
+			left: 50%
+			margin-left: -75px
+			color: $white
+			width: 150px
+			height: 100px
+			display: block
+			span.project-item-head
+				font-family: Montserrat
+				font-size: 18px
+				font-style: normal
+				text-align: center
+				display: block
+			span.project-item-desc
+				font-family: Tinos
+				font-size: 14px
+				font-style: italic
+				text-align: center
+				display: block
+				margin-top: 5px
+			span.icon-eye
+				display: block
+				color: $gold
+				text-align: center
+				font-size: 24px
+				margin-top: 5px
+	.mix:hover:before
+		content: ''
+		position: absolute
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(33, 33, 33, 0.8)
+	.gallery-art-wrapper
+		padding: 0px
+		margin: 2px
+	div.heading-bottom-galary
+		text-transform: uppercase
+		font-size: 24px
+		color: $gray
+		text-align: center
+		margin-top: 70px
+		margin-bottom: 50px
+
+
+
+		
+
+// PAGE SINGLE SERVICES (finish)
+
+// PAGE CONTACT (start)
+
+#sect-page-contact
+	padding-bottom: 0px
+	margin-bottom: 0px
+	h1.heading-page
+		font-size: 48px
+		text-align: center
+		color: $gray
+		margin: 0 auto
+	.m-b-30
+		margin-bottom: 30px
+	div.text-page
+		width: 1100px
+		color: $sub-gray
+		font-size: 16px
+		line-height: 1.63
+		text-align: center
+		font-family: Nunito
+		margin: 0 auto
+	.m-b-60
+		margin-bottom: 20px
+	div.article_content
+		width: 100%
+	img.img_page
+		width: 80%
+		height: 500px
+		margin: 0 auto
+		display: block
+		margin-bottom: 30px
+	a.mix
+		padding: 0px
+		margin: 0px
+		position: relative
+		div.project-item-wrapper
+			position: absolute
+			top: 33%
+			left: 50%
+			margin-left: -75px
+			color: $white
+			width: 150px
+			height: 100px
+			display: none
+		img
+			width: 100%
+			height: 100%
+	a.mix:hover
+		padding: 0px
+		margin: 0px
+		position: relative
+		div.project-item-wrapper
+			position: absolute
+			top: 33%
+			left: 50%
+			margin-left: -75px
+			color: $white
+			width: 150px
+			height: 100px
+			display: block
+			span.project-item-head
+				font-family: Montserrat
+				font-size: 18px
+				font-style: normal
+				text-align: center
+				display: block
+			span.project-item-desc
+				font-family: Tinos
+				font-size: 14px
+				font-style: italic
+				text-align: center
+				display: block
+				margin-top: 5px
+			span.icon-eye
+				display: block
+				color: $gold
+				text-align: center
+				font-size: 24px
+				margin-top: 5px
+	.mix:hover:before
+		content: ''
+		position: absolute
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(33, 33, 33, 0.8)
+	.gallery-art-wrapper
+		padding: 0px
+		margin: 2px
+	div.heading-gallary-separate
+		font-size: 24px
+		text-transform: uppercase
+		color: $gray
+		text-align: center
+		margin: 30px 0 30px
+	div#map
+		height: 450px
+		margin-right: -15px
+		margin-left: -15px
+
+
+		
+
+// PAGE CONTACT (finish)
+
+// PAGE STANDART (start)
+
+#sect-page-standart
+	padding-bottom: 0px
+	margin-bottom: 50px
+	h1.heading-page
+		font-size: 48px
+		text-align: center
+		color: $gray
+		margin: 0 auto
+	.m-b-30
+		margin-bottom: 30px
+	div.text-page
+		width: 1100px
+		color: $sub-gray
+		font-size: 16px
+		line-height: 1.63
+		text-align: center
+		font-family: Nunito
+		margin: 0 auto
+	.m-b-60
+		margin-bottom: 20px
+	div.article_content
+		width: 100%
+	img.img_page
+		width: 80%
+		height: 500px
+		margin: 0 auto
+		display: block
+		margin-bottom: 30px
+	a.mix
+		padding: 0px
+		margin: 0px
+		position: relative
+		div.project-item-wrapper
+			position: absolute
+			top: 33%
+			left: 50%
+			margin-left: -75px
+			color: $white
+			width: 150px
+			height: 100px
+			display: none
+		img
+			width: 100%
+			height: 100%
+	a.mix:hover
+		padding: 0px
+		margin: 0px
+		position: relative
+		div.project-item-wrapper
+			position: absolute
+			top: 33%
+			left: 50%
+			margin-left: -75px
+			color: $white
+			width: 150px
+			height: 100px
+			display: block
+			span.project-item-head
+				font-family: Montserrat
+				font-size: 18px
+				font-style: normal
+				text-align: center
+				display: block
+			span.project-item-desc
+				font-family: Tinos
+				font-size: 14px
+				font-style: italic
+				text-align: center
+				display: block
+				margin-top: 5px
+			span.icon-eye
+				display: block
+				color: $gold
+				text-align: center
+				font-size: 24px
+				margin-top: 5px
+	.mix:hover:before
+		content: ''
+		position: absolute
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(33, 33, 33, 0.8)
+	.gallery-art-wrapper
+		padding: 0px
+		margin: 2px
+	div.heading-gallary-separate
+		font-size: 24px
+		text-transform: uppercase
+		color: $gray
+		text-align: center
+		margin: 30px 0 30px
+
+
+		
+
+// PAGE STANDART (finish)
+
 
 
 // OTHER PAGES (finish)

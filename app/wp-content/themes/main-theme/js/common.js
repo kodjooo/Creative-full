@@ -87,6 +87,7 @@ if(document.documentElement.clientWidth < 896) {
     });
 };
 
+
 $(function(){
   $(".portfolio").mixItUp({
     // Нужно сначала дать display: none всем фильтрующимся элементам
@@ -108,11 +109,11 @@ $(function(){
 });
 
 $(function(){
-  $(".materials-galary").mixItUp({
+  $(".portfolio-in-main").mixItUp({
     // Нужно сначала дать display: none всем фильтрующимся элементам
     // При загрузке фильтрует по этому фильтру
     load: {
-     filter:'.laminate'
+     filter:'.flooring'
     },
     // Добавляет класс акт. кнопке
     controls: {
@@ -126,5 +127,6 @@ $(function(){
     // Поддерживаемые значения: fade, scale, translateY, translateZ, rotateX, rotateY, rotateZ, stagger, translateX
   });
 });
+
 
 

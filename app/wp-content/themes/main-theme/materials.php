@@ -7,7 +7,7 @@ get_header(); ?>
 
 <style>
 	#sect-top-mini{
-		background: url(<?php the_post_thumbnail_url(); ?>);
+		background: url(<?php $img_bgc = get_the_post_thumbnail_url(); if($img_bgc){ the_post_thumbnail_url(); } else { echo '/wp-content/uploads/2017/12/Dark-Hardwood-Floor-Luxury-Nice-Interior-Design-Designer-Architecture.jpg'; } ?>);
 		background-size: cover;
 		background-position: center;
 		position: relative;
@@ -35,10 +35,24 @@ get_header(); ?>
 				<div class="row">
 					<div class="col-12 text-in-top-wrapper">
 						<div class="row">
-							<div class="col-6">
-								<div class="category-heading"><?php the_title(); ?></div>
+							<div class="col-8">
+								<div class="row">
+									<div class="col-12">
+										<div class="category-heading"><?php the_title(); ?></div>
+									</div>
+									<div class="col-12 breadcrumb-main-wrapper">
+		                <div class="breadcrumb-main">
+		                    <?php
+		                    if(function_exists('bcn_display'))
+		                    {
+		                        bcn_display();
+		                    }
+		                    ?>
+		                </div>
+		              </div>
+								</div>
 							</div>
-							<div class="col-6 align-self-center">
+							<div class="col-4 align-self-center">
 								<div class="row justify-content-end">
 								<a href="#" class="">
 									<span class="text-in-top-button"><?php the_field('text_for_touch_to_contact', 'option'); ?></span>
@@ -192,6 +206,29 @@ get_header(); ?>
                 </div>
             </article>
             <!-- Article End -->
+            <?php $select = $_GET['select']; ?>
+            	<script>
+            		$(function(){
+								  $(".materials-galary").mixItUp({
+								    // Нужно сначала дать display: none всем фильтрующимся элементам
+								    // При загрузке фильтрует по этому фильтру
+								    load: {
+								     filter:'.<?php if( $select ){ echo $select; } else { echo 'laminate'; } ?>'
+								     
+								    },
+								    // Добавляет класс акт. кнопке
+								    controls: {
+								     activeClass:'on'
+								    } 
+								    // animation: {
+								    //  enable:true, - вкл. анимацию
+								    //  effects:'scale fade',
+								    //  duration:700
+								    // }
+								    // Поддерживаемые значения: fade, scale, translateY, translateZ, rotateX, rotateY, rotateZ, stagger, translateX
+								  });
+								});
+            	</script>
 							</div>
 						</div>
 					</div>
